@@ -38,8 +38,8 @@ function getRandomDog(dogs) {
 
 module.exports = {
     start: function () {
-        app.listen(config.port, config.ip, function () {
-            console.log(`Serving http://${config.ip}:${config.port}/`);
+        app.listen(config.port, function () {
+            console.log(`Serving http://localhost:${config.port}/`);
         });
     }
 }
