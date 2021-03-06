@@ -39,7 +39,7 @@ function getRandomDog(dogs) {
 module.exports = {
     start: function () {
         app.listen(config.port, function () {
-            console.log(`Serving http://localhost:${config.port}/`);
+            console.log(`🐍 Serving http://localhost:${config.port}/`);
         });
     }
 }
