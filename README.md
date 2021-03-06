@@ -7,9 +7,9 @@ The best **DOG API**!
 
 |Request|Description|
 |-|-|
-|`api.com/`|Returns Dog Image URI and DIg Image Index|
-|`api.com/random`|Returns Dog Image as Jpeg|
-|`api.com/dog/1234`|Returns dog image `####` as a Jpeg|
+|[`http://mc.connorcode.com:8888/`](http://mc.connorcode.com:8888/)|Returns Dog Image URI and DIg Image Index|
+|[`http://mc.connorcode.com:8888/random`](http://mc.connorcode.com:8888/random)|Returns Dog Image as Jpeg|
+|[`http://mc.connorcode.com:8888/dog/1234`](http://mc.connorcode.com:8888/dog/1234)|Returns dog image `####` as a Jpeg|
 
 ### Host it yurself!
 
