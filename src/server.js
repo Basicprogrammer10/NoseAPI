@@ -1,13 +1,13 @@
-const path = require('path');
+const rateLimit = require("express-rate-limit");
 const express = require('express');
+const path = require('path');
 const fs = require('fs');
+
 const config = require('./config.json');
 
 const app = express();
 const dir = path.join(__dirname, config.dogPath);
 const dogs = fs.readdirSync(dir);
-
-const rateLimit = require("express-rate-limit");
 
 const limiter = rateLimit({
     windowMs: 30000,
