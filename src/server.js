@@ -11,13 +11,13 @@ const rateLimit = require("express-rate-limit");
 
 const limiter = rateLimit({
     windowMs: 30000,
-    max: 100,
+    max: 100
 });
 
 app.use(limiter);
 
 app.get('/random', function (req, res) {
-    res.sendFile(`${dir}/${getRendomDog(dogs)[1]}`)
+    res.sendFile(`${dir}/${getRandomDog(dogs)[1]}`)
 });
 
 app.get('/dog/:index', function (req, res) {
@@ -27,11 +27,11 @@ app.get('/dog/:index', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    let dogImage = getRendomDog(dogs);
+    let dogImage = getRandomDog(dogs);
     res.json({index: dogImage[0], image: `/dog/${dogImage[0]}`});
 });
 
-function getRendomDog(dogs) {
+function getRandomDog(dogs) {
     let random = Math.floor(Math.random() * dogs.length);
     return [random, dogs[random]];
 }
