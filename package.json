@@ -1,6 +1,11 @@
 {
   "name": "NoseAPI",
+  "author": "Connor S <connor@connorcode.com> (https://connorcode.com)",
+  "description": "An API to satisfy all your nosing needs!",
+  "repository": "github:Basicprogrammer10/NoseAPI",
   "version": "1.0.0",
+  "license": "GPL-3.0",
+  "main": "src/index.js",
   "dependencies": {
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6"
